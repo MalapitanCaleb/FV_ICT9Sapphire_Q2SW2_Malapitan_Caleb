@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Robotics Club Invite</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body{
+			background: url(https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1092.jpg?t=st=1732066941~exp=1732070541~hmac=0f2ea923d057e5a0f4a1e8cafdedf48a19c5b48e3d4fadd36d024d30d6bb125f&w=996);
+			color: white;
+			background-repeat: no-repeat;
+	        background-size: cover;
+	        background-attachment: fixed;
+		}
+		.container{
+			padding: 10px;
+			background: #263f91;
+			border-radius: 10px;
+			width: 1000px;
+		}
+		h1{
+			text-align: center;
+		}
+		.row{
+			padding: 25px;
+			color: white;
+		}
+		input{
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Robotics Club Form</h1>
+	<div class="container">
+		<form>
+		<div class="row">
+			<div class="col-md-6">Name<br><input type="text" id="name" style="width: 400px;" required></div>
+			<div class="col-md-6">Age<br><input type="text" id="age" style="width: 400px;" required></div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">Email Address<br><input type="text" id="email" style="width: 400px;" required></div>
+			<div class="col-md-6">Phone Number<br><input type="text" id="phone" style="width: 400px;" required></div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">Preferred Robotics Topics<br>
+			    <input type="radio" id="pro" name="pro"><label for="Pro">Programming</label><br>
+		        <input type="radio" id="ele" name="ele"><label for="Ele">Electronics</label><br>
+		        <input type="radio" id="md" name="md"><label for="md">Mechanical Design</label><br>
+		    </div>
+		    <div class="col-md-6">Robotics Experience Level<br>
+			    <input type="radio" id="beg" name="beg"><label for="beg">Beginner</label><br>
+		        <input type="radio" id="int" name="int"><label for="int">Intermediate</label><br>
+		        <input type="radio" id="Ad" name="Ad"><label for="Ad">Advanced</label><br>
+		    </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-6">Preferred Robotics Project<br>
+		    <select id="branch" name="branch">
+			    <option value="Arm">Robotic Arm</option>
+			    <option value="Steer">Steerable Robot</option>
+			    <option value="Swarm">Swarm Robotics</option>
+			    <option value="Line">Line Follower Robot</option>
+            </select>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-6">Reason for Joining<br>
+        		<textarea row="20" cols="125"></textarea>
+            </div>
+        </div>
+        <div class="row" id="SUb">
+        	<div class="col-md-6">
+        		<input type="submit" id="submit" name="submit" value="Submit">
+            </div>
+        </div>
+		</form>
+	</div>
+</body>
+</html>
